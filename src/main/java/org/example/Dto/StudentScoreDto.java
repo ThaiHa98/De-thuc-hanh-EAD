@@ -52,7 +52,7 @@ public class StudentScoreDto {
             this.grade = "Invalid";
             return;
         }
-        double averageScore = (score1 + score2) / 2.0;
+        double averageScore = 0.3 * score1 + 0.7 * score2;
         if (averageScore >= 8.0) {
             this.grade = "A";
         } else if (averageScore >= 6.0) {
